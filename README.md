@@ -13,7 +13,11 @@ To learn how to install the model and how to use it, click [here](https://github
 ## Example
 Here we choose Guangdong(Region A) and Shandong(Region B) as the source region and target region, and we obtained genus-level species abundance tables for these two regions, 
 individuals with T2D are the positive samples and controls are the negitive samples.
-    
+
+Genus-level species abundance tables([reference format](https://github.com/HUST-NingKang-Lab/EXPERT)): region1_train.tsv  region1_test.tsv  region2_train.tsv  region2_test.tsv       
+Biome profiles([reference format](https://github.com/HUST-NingKang-Lab/EXPERT)): biome.tsv      
+Mapper profiles([reference format](https://github.com/HUST-NingKang-Lab/EXPERT)): region1_train_mapper.tsv  region1_test_mapper.tsv  region2_train_mapper.tsv region2_test_mapper.tsv 
+
 #### Ab initio training 
 - Train the disease neural network model from scratch. Here we will use ontology.pkl and hdf files.
 ```
