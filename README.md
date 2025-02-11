@@ -20,10 +20,13 @@ Biome profiles([reference format](https://github.com/HUST-NingKang-Lab/EXPERT)):
 Mapper profiles([reference format](https://github.com/HUST-NingKang-Lab/EXPERT)): region1_train_mapper.tsv  region1_test_mapper.tsv  region2_train_mapper.tsv region2_test_mapper.tsv 
 
 #### Ontology construct
+- Construct a biome ontology representing stages of T2D. You'll see constructed ontology like a tree in the printed message.
 ([Reference](https://github.com/HUST-NingKang-Lab/EXPERT))
 #### Source mapping
+- Map microbial community samples to the biome ontology to obtain hierarchical labels. You'll see counts of the samples on each biome ontology layer in the printed message.
 ([Reference](https://github.com/HUST-NingKang-Lab/EXPERT))
 #### Data convert
+- Convert input abundance data to model-acceptable hdf file. The EXPERT model only accepts standardized abundance data. Here we standardize the abundance data using convert mode.
 ([Reference](https://github.com/HUST-NingKang-Lab/EXPERT))
 
 #### Ab initio training 
