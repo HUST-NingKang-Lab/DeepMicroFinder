@@ -9,3 +9,28 @@ Samples of each cohort were randomly divided into the training subset and the te
 
 ## Get and use
 To learn how to install the model and how to use it, click [here](https://github.com/HUST-NingKang-Lab/EXPERT)
+
+## Example
+Here we choose Guangdong(Region A) and Shandong(Region B) as the source region and target region, and we obtained genus-level species abundance tables for these two regions, 
+individuals with T2D are the positive samples and controls are the negitive samples.
+    
+#### Ab initio training 
+- Train the disease neural network model from scratch. Here we will use ontology.pkl and hdf files.
+```
+expert train -i region1_trainCM.h5 -l region1_train_labels.h5 -t ontology.pkl -o region1_DNN
+```
+#### Transfer learning
+- Transfer the knowledge of region B to the DNN model of region A for better performance in disease diagnosis on region B. You'll see running log and training process in the printed message.
+```
+expert transfer -i region2_trainCM.h5 -l region2_train_labels.h5 -t ontology.pkl -m  region1_DNN -o Transfer_DNN
+```
+#### Search
+- Search the test set of region B against the transferred DNN model.
+```
+expert search -i region2_testCM.h5 -m Transfer_DNN -o Search_Transfer_DNN
+```
+#### Evaluation
+- Evaluate the performance of the Transferred DNN model. You'll obtain a performance report.
+```
+expert evaluate -i Search_Transfer_DNN -l region2_test_labels.h5 -o Evaluation
+```
