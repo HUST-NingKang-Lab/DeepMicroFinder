@@ -34,3 +34,9 @@ expert search -i region2_testCM.h5 -m Transfer_DNN -o Search_Transfer_DNN
 ```
 expert evaluate -i Search_Transfer_DNN -l region2_test_labels.h5 -o Evaluation
 ```
+
+## Maintainers
+| Name | Email | Organization |
+| ---- | ----- | ------------ |
+|Nan Wang|[wangnan123@hust.edu.cn](mailto:wangnan123@hust.edu.cn)|PhD Student, School of Life Science and Technology, Huazhong University of Science & Technology|
+|Kang Ning  | [ningkang@hust.edu.cn](mailto:ningkang@hust.edu.cn)       | Professor, School of Life Science and Technology, Huazhong University of Science & Technology |
