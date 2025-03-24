@@ -31,3 +31,10 @@ expert search -i shandong_testCM.h5 -m SGMP_Disease_Model.h5 -o Search_shandong
 ```
 expert evaluate -i Search_shandong -l shandong_test_labels.h5 -o Evaluation
 ```
+
+## Maintainer
+
+|   Name    | Email                 | Organization                                                 |
+| :-------: | --------------------- | ------------------------------------------------------------ |
+| Nan Wang | wangnan123@hust.edu.cn | Phd student, School of Life Science and Technology, Huazhong University of Science & Technology|
+| Kang Ning | ningkang@hust.edu.cn  | Professor, School of Life Science and Technology, Huazhong University of Science & Technology |
