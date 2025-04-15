@@ -1,6 +1,10 @@
 # DeepMicroFinder
 DeepMicroFinder is a deep learning framework, which integrated the neural network and transfer learning and could effectively reduce the regional effects for microbial-based cross-regional diagnosis of T2D.
 
+- /fig1 # The figure for illustrating the framework of DeepMicroFinder
+- /fig2 # The data for conducting the GBTM grouping trajectory
+- /model # The DNN models of GGMP and SGMP, and the ontology file
+- supplementary_figures_codes # General R scripts used in this study
 
 ## Get and use
 To learn how to install the model and how to use it, click [here](https://github.com/HUST-NingKang-Lab/EXPERT)
